@@ -1,0 +1,29 @@
+
+.footer{
+    background-color: #FF8933;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+.footer .contact {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer .contact img {
+    width: 30px;
+    height: 30px;; /* makes the icons white */
+    transition: transform 0.3s;
+}
+.footer .contact img:hover {
+    transform: scale(1.2);
+}
+.footer .par {
+    font-size: 14px;
+}

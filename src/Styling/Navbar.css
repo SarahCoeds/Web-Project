@@ -1,0 +1,48 @@
+
+
+.navbar {
+  background-color: #FF8933;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 40px;   /* horizontal breathing room */
+}
+
+
+.logo img {
+  height: 100%;       /* makes it match the navbar height */
+  max-height: 75px;   /* prevents overflow */
+  width: auto;        /* keeps aspect ratio */
+  object-fit: contain;
+  display: block;
+}
+
+.Links {
+  display: flex;
+  align-items: center;
+  gap: 30px;          /* more space between links */
+  margin-right: 40px; /* space from the right edge */
+}
+.Links a {
+  text-decoration: none;
+  color: #107462;
+  font-weight: bold;
+}
+
+.Links a:hover {
+  color: #6dc595;
+}
+
+.login {
+  background-color: #107462;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.login:hover {
+  background-color: #59ad7f;
+}

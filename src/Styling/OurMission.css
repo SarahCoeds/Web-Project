@@ -1,0 +1,53 @@
+.mission-page {
+  margin: 0;
+  padding: 0;
+}
+
+.mission-video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mission-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.mission-cards {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.mcard1, .mcard2, .mcard3, .mcard4 {
+  background-color: rgba(255, 137, 51, 0.75); 
+  border: 2px solid black;
+  height: 500px; 
+  border-radius: 15px;
+  padding: 25px;
+  width: 325px;
+}
+
+.mcard1 h1, .mcard2 h1, .mcard3 h1, .mcard4 h1 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.mcard1 p, .mcard2 p, .mcard3 p, .mcard4 p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
