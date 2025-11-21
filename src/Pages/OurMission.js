@@ -5,11 +5,9 @@ export default function Mission() {
     <div className="mission-page">
       <div className="mission-video-container">
         <video autoPlay loop muted className="mission-video">
-          <source
-            src="/Assets/Videos/3297797-uhd_4096_2160_25fps.mp4"
-            type="video/mp4"
-          />
+        <source src={process.env.PUBLIC_URL + "/Assets/Videos/3297797-uhd_4096_2160_25fps.mp4"} type="video/mp4" />
         </video>
+        
 
         <div className="mission-cards">
           <div className="mcard1">

@@ -5,9 +5,15 @@ export default function Home() {
         <div className="home">
 
             <div className="openning-video">
-                <video autoPlay loop muted>
-                    <source src="/Assets/Videos/3298018-uhd_4096_2160_25fps.mp4" type="video/mp4" />
-                </video>
+                <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInLine
+                  >
+                <source src={process.env.PUBLIC_URL + "/Assets/Videos/3298018-uhd_4096_2160_25fps.mp4"} type="video/mp4" />
+
+                  </video>
 
                 <div className="opener">
                     <h1>Bite</h1>

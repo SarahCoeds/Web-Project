@@ -5,7 +5,8 @@ export default function Navbar() {
     return(
         <div className="navbar">
             <div className="logo">
-                <img src="/Assets/Logo/Screenshot 2025-11-21 161539.png" alt="Logo"/>
+                <img src={process.env.PUBLIC_URL + "/Assets/Logo/Screenshot 2025-11-21 161539.png"} />
+
             </div>
 
 
