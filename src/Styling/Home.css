@@ -42,7 +42,7 @@
 .Testemonials {
   padding: 60px 40px;
   text-align: center;
-  width: 1800px;
+  min-width: 300px;
 }
 
 .cards {

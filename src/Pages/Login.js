@@ -1,42 +1,48 @@
-import { useState } from "react";
+import "../Styling/Login.css";
 
-export default function MyForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: ""
-  });
-
-  function handleChange(e) {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    console.log(formData);
-  }
-
+export default function Login() {
   return (
-    <form onSubmit={handleSubmit}>
-      <input 
-        type="text"
-        name="name"
-        placeholder="Your name"
-        value={formData.name}
-        onChange={handleChange}
-      />
+    <div className="login-page">
+      <form className="login-form">
+        <h1>Login</h1>
 
-      <input 
-        type="email"
-        name="email"
-        placeholder="Your email"
-        value={formData.email}
-        onChange={handleChange}
-      />
+        <div className="input-group">
+          <label htmlFor="name">Name</label>
+          <input 
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Display Name"
+            required
+          />
+        </div>
 
-      <button type="submit">Submit</button>
-    </form>
+        <div className="input-group">
+          <label htmlFor="email">Email</label>
+          <input 
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+
+        <div className="input-group">
+          <label htmlFor="password">Password</label>
+          <input 
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Your Password"
+            required
+          />
+        </div>
+
+        <button type="submit" className="login-btn">Submit</button>
+
+        <p>Don’t have an account? <span>Sign up</span></p>
+      </form>
+    </div>
   );
 }
