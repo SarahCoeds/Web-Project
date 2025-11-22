@@ -26,17 +26,17 @@ export default function Mission() {
           <div className="mcard2">
             <h1>Personalized Plans</h1>
             <p>
-              Receive the best food plans weekly, customized to your lifestyle,
-              goals, and taste buds because eating well should feel effortless,
-              not exhausting.
+            Receive the best food plans weekly, customized to your lifestyle,
+            goals, and taste buds because eating well should feel effortless,
+            not exhausting.
             </p>
           </div>
 
           <div className="mcard3">
             <h1>Connect</h1>
             <p>
-              Connect with people from all over the world by sharing ideas,
-              stories, and inspiration through our blog!
+            Connect with people from all over the world by sharing ideas,
+            stories, and inspiration through our blog!
             </p>
           </div>
 

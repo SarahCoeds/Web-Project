@@ -2,7 +2,10 @@ import "../Styling/Login.css";
 
 export default function Login() {
   return (
+
+    
     <div className="login-page">
+      
       <form className="login-form">
         <h1>Login</h1>
 
