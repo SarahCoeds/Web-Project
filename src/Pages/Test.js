@@ -16,22 +16,42 @@ export default function Test() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", data);
-    alert("Form submitted! Check console for data.");
-  };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const saved = localStorage.getItem("biteUser");
+  const user = saved ? JSON.parse(saved) : null;
+
+  try {
+    const res = await fetch("http://localhost:5000/api/test", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        user_id: user ? user.id : null,
+        age: Number(data.age),
+        weight: Number(data.weight),
+        height: Number(data.height),
+        activity: data.activity
+      })
+    });
+
+    const result = await res.json();
+
+    if (!res.ok) {
+      alert(result.message || "Test submit failed");
+      return;
+    }
+
+    alert("Test saved!");
+  } catch (err) {
+    alert("Server error");
+  }
+};
+
 
   return (
-    <div className="test-page">
-
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="test-video"
-      >
+    <div className="page-content test-page">
+      <video autoPlay loop muted playsInline className="test-video">
         <source
           src={process.env.PUBLIC_URL + "/Assets/Videos/4253140-uhd_4096_2160_25fps.mp4"}
           type="video/mp4"
