@@ -6,14 +6,14 @@
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  padding: 0 40px;   /* horizontal breathing room */
+  padding: 0 40px; 
 }
 
 
 .logo img {
-  height: 100%;       /* makes it match the navbar height */
-  max-height: 75px;   /* prevents overflow */
-  width: auto;        /* keeps aspect ratio */
+  height: 100%;       
+  max-height: 75px;   
+  width: auto;        
   object-fit: contain;
   display: block;
 }
@@ -21,8 +21,8 @@
 .Links {
   display: flex;
   align-items: center;
-  gap: 30px;          /* more space between links */
-  margin-right: 40px; /* space from the right edge */
+  gap: 30px;          
+  margin-right: 40px; 
 }
 .Links a {
   text-decoration: none;

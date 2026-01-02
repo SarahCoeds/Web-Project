@@ -13,11 +13,10 @@ export default function Mission() {
           <div className="mcard1">
             <h1>Track Meals</h1>
             <p>
-              Bite aims to help people improve their health by offering 
-              personalized nutrition and lifestyle guidance, 
-              supportive community features, and the tools 
-              needed to make positive, 
-              lasting changes toward a healthier life.
+            Bite aims to help people improve their health by offering 
+            personalized nutrition and lifestyle guidance, 
+            supportive community features, and the tools needed to make 
+            positive, lasting changes toward a healthier life.
             </p>
           </div>
 
